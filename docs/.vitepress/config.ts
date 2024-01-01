@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { withPwa } from '@vite-pwa/vitepress'
 import { generateSitemap as sitemap } from 'sitemap-ts'
-import { description, docsVersion, github, keywords, name, site } from './meta'
+import { description, github, keywords, name, site } from './meta'
 import { genFeed } from './plugins/genFeed'
 import { pwa } from './plugins/pwa'
 import sidebar from './sidebar'
@@ -43,35 +43,12 @@ export default withPwa(defineConfig({
       copyright: `<a target="_blank" href="${github}/blob/main/LICENSE">MIT License</a> | 版权所有 © 2022-${new Date().getFullYear()} <a target="_blank" href="${github}">Chocolate and ChoDocs contributors</a>`,
     },
     nav: [
-      { text: '💭 学习圈子', link: '/zsxq' },
       {
-        text: '🔥 专栏',
+        text: '学习笔记',
         items: [
           { text: '🔥 前端算法', link: '/algorithm/guide/' },
           { text: '🔥 设计模式', link: '/patterns/guide/' },
           { text: '📋 面试大全', link: '/interview/' },
-        ],
-      },
-      {
-        text: '编程',
-        items: [
-          { text: '⭐ 资源导航', link: '/favorites' },
-          { text: '💻 编程学习', link: '/program/' },
-          { text: '🔧 编程工具', link: '/tool/' },
-        ],
-      },
-      {
-        text: '洞见',
-        items: [
-          { text: '✏️ 随笔', link: '/essay/' },
-          { text: '🌱 青葱岁月', link: '/green/ch' },
-        ],
-      },
-      {
-        text: `v${docsVersion}`,
-        items: [
-          { text: '🧱 参与贡献', link: '/contributing' },
-          { text: '🎉 更新日志', link: `${github}/releases` },
         ],
       },
     ],
