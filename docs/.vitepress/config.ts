@@ -1,13 +1,12 @@
 import { defineConfig } from 'vitepress'
 import { withPwa } from '@vite-pwa/vitepress'
 import { description, github, keywords, name, site } from './meta'
-import { pwa } from './plugins/pwa'
 import sidebar from './sidebar'
 import socialLinks from './link'
 import algolia from './algolia'
+import nav from './nav'
 
 export default withPwa(defineConfig({
-  pwa,
   outDir: '../dist',
   title: name,
   description,
@@ -36,16 +35,7 @@ export default withPwa(defineConfig({
       text: '在 GitHub 上编辑此页',
     },
     lastUpdatedText: '最后一次更新于',
-    nav: [
-      {
-        text: '学习笔记',
-        items: [
-          { text: 'Java面试笔记', link: '/notes/java', activeMatch: '/notes/java' },
-          { text: 'Go', link: '/notes/go', activeMatch: '/notes/go' },
-        ],
-        activeMatch: '/notes',
-      },
-    ],
+    nav: nav(),
     algolia,
     sidebar,
     socialLinks,

@@ -6,7 +6,6 @@ import UnoCSS from 'unocss/vite'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
-import { MarkdownTransform } from './.vitepress/plugins/markdownTransform'
 
 const require = createRequire(import.meta.url)
 
@@ -23,8 +22,6 @@ export default defineConfig(async () => {
       },
     },
     plugins: [
-      // custom
-      MarkdownTransform(),
       // plugins
       Components({
         dirs: resolve(__dirname, '.vitepress/theme/components'),
