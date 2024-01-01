@@ -38,10 +38,10 @@ export default withPwa(defineConfig({
       text: '在 GitHub 上编辑此页',
     },
     lastUpdatedText: '最后一次更新于',
-    footer: {
-      message: `用心去做高质量的专业前端内容网站，欢迎 <a target="_blank" style="color: var(--vp-c-brand)" href="${github}">star ⭐</a> 让更多人发现`,
-      copyright: `<a target="_blank" href="${github}/blob/main/LICENSE">MIT License</a> | 版权所有 © 2022-${new Date().getFullYear()} <a target="_blank" href="${github}">Chocolate and ChoDocs contributors</a>`,
-    },
+    // footer: {
+    //   message: `用心去做高质量的专业前端内容网站，欢迎 <a target="_blank" style="color: var(--vp-c-brand)" href="${github}">star ⭐</a> 让更多人发现`,
+    //   copyright: `<a target="_blank" href="${github}/blob/main/LICENSE">MIT License</a> | 版权所有 © 2022-${new Date().getFullYear()} <a target="_blank" href="${github}">Chocolate and ChoDocs contributors</a>`,
+    // },
     nav: [
       {
         text: '学习笔记',
