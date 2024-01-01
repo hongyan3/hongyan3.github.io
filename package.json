@@ -1,0 +1,81 @@
+{
+  "name": "chodocs",
+  "type": "module",
+  "version": "0.2.3",
+  "private": true,
+  "packageManager": "pnpm@8.11.0",
+  "description": "一站式前端内容网站，包括学习路线、知识体系（用专栏形式更新）。",
+  "author": "Choi Yang<https://github.com/Chocolate1999>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chodocs/chodocs"
+  },
+  "bugs": {
+    "url": "https://github.com/chodocs/chodocs/issues"
+  },
+  "keywords": [
+    "react 专栏",
+    "vue 专栏",
+    "TypeScript 系列",
+    "Next.js 实战",
+    "前端基础",
+    "前端学习路线",
+    "前端思维导图",
+    "知识星球"
+  ],
+  "scripts": {
+    "dev": "vitepress dev docs --port 8080 --max-old-space-size=50000",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs",
+    "lint": "eslint --cache .",
+    "lint:fix": "nr lint --fix",
+    "release": "esno scripts/release.ts",
+    "update": "esno scripts/update.ts"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.42.1",
+    "@antfu/ni": "^0.21.9",
+    "@iconify/json": "^2.2.144",
+    "@types/fs-extra": "^11.0.4",
+    "@types/md5": "^2.3.5",
+    "@vite-pwa/vitepress": "^0.2.3",
+    "bumpp": "^9.2.0",
+    "busuanzi.pure.js": "^1.0.3",
+    "cloudinary-build-url": "^0.2.4",
+    "dayjs": "^1.11.10",
+    "eslint": "8.50.0",
+    "eslint-plugin-import": "^2.29.0",
+    "esno": "^4.0.0",
+    "fast-glob": "^3.3.2",
+    "feed": "^4.2.2",
+    "fs-extra": "^11.1.1",
+    "gray-matter": "^4.0.3",
+    "lint-staged": "^15.1.0",
+    "md5": "^2.3.0",
+    "medium-zoom": "^1.1.0",
+    "moment": "^2.29.4",
+    "ohmyfetch": "^0.4.21",
+    "postcss": "^8.4.31",
+    "postcss-nested": "^6.0.1",
+    "simple-git": "^3.21.0",
+    "simple-git-hooks": "^2.9.0",
+    "sitemap-ts": "^1.6.1",
+    "typescript": "^5.2.2",
+    "unocss": "^0.57.0",
+    "unplugin-icons": "^0.17.4",
+    "unplugin-vue-components": "^0.25.2",
+    "vite": "^4.5.0",
+    "vite-plugin-pwa": "^0.16.7",
+    "vitepress": "^1.0.0-rc.29",
+    "vue": "^3.3.8"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,vue,md}": [
+      "eslint --cache --fix"
+    ]
+  }
+}
