@@ -3,7 +3,6 @@ import { withPwa } from '@vite-pwa/vitepress'
 import { description, github, keywords, name, site } from './meta'
 import sidebar from './sidebar'
 import socialLinks from './link'
-import algolia from './algolia'
 import nav from './nav'
 
 export default withPwa(defineConfig({
@@ -35,15 +34,17 @@ export default withPwa(defineConfig({
       text: '在 GitHub 上编辑此页',
     },
     lastUpdatedText: '最后一次更新于',
+    search: {
+      provider: 'local',
+    },
     nav: nav(),
-    algolia,
     sidebar,
     socialLinks,
   },
   head: [
     ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],
     ['meta', { name: 'keywords', content: keywords }],
-    ['meta', { name: 'author', content: 'Choi Yang' }],
+    ['meta', { name: 'author', content: 'xiyuan' }],
     ['meta', { property: 'og:type', content: 'article' }],
     ['meta', { name: 'application-name', content: name }],
     ['meta', { name: 'apple-mobile-web-app-title', content: name }],

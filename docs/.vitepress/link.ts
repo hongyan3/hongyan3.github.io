@@ -1,7 +1,7 @@
-const socialLinks = [
+const socialLinks: any = [
   {
     icon: 'github',
-    link: 'https://github.com/chodocs/chodocs',
+    link: 'https://xiyuan230.github.io',
   },
 ]
 
