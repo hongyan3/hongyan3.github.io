@@ -11,16 +11,13 @@ function sidebarDefault() {
       collapsed: false,
       items: [
         { text: '阅读须知', link: '/guide' },
-        { text: '学习圈子', link: '/zsxq' },
-        { text: '资源导航', link: '/notes/java' },
-        { text: '编程学习', link: '/program/' },
       ],
     },
     {
-      text: 'Next.js 实战',
+      text: '面试专栏',
       collapsed: false,
       items: [
-        { text: '添加 sitemap', link: '/nextjs/sitemap/' },
+        { text: 'Java面试题', link: '/interview/Java面试笔记' },
       ],
     },
   ]
@@ -32,8 +29,8 @@ function sidebarInterview() {
       text: 'Java面试',
       collapsed: false,
       items: [
-        { text: '阅读须知', link: '/guide' },
-        { text: '学习圈子', link: '/zsxq' },
+        { text: '面试题', link: '/interview/Java面试笔记' },
+        { text: '面试经验', link: '/zsxq' },
       ],
     },
     {
