@@ -29,13 +29,11 @@ function sidebarDefault() {
 function sidebarInterview() {
   return [
     {
-      text: 'Java',
+      text: 'Java面试',
       collapsed: false,
       items: [
         { text: '阅读须知', link: '/guide' },
         { text: '学习圈子', link: '/zsxq' },
-        { text: '资源导航', link: '/notes/java' },
-        { text: '编程学习', link: '/program/' },
       ],
     },
     {
