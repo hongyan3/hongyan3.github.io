@@ -180,7 +180,7 @@ Redis的过期删除策略：**惰性删除** + **定期删除**两种策略配�
 
 1. 采用`EXPLAIN`或者`DESC`命令获取MySQL如何执行SELECT语句
 
-   ![image-20231230134440074](https://s2.loli.net/2024/03/08/cYrsXDemf5R2hOq.png)![image-20231230135158620]
+   ![image-20231230134440074](https://s2.loli.net/2024/03/08/cYrsXDemf5R2hOq.png)
 
 > 如果SQL的type是`index`或者`all`时，就需要优化
 
@@ -258,7 +258,7 @@ SQL优化经验
 
 ### 3. 事务的特性
 
-![image-20240106214949389](/Users/xiyuan/Documents/Typora/技术文档/Java面试笔记.assets/image-20240106214949389.png)
+![image-20240106214949389](https://s2.loli.net/2024/03/08/7pxDTzMIjthrZGf.png)
 
 并发事务问题
 
