@@ -1,11 +1,11 @@
 {
-  "name": "chodocs",
+  "name": "mydocs",
   "type": "module",
   "version": "0.2.3",
   "private": true,
   "packageManager": "pnpm@8.11.0",
-  "description": "一站式前端内容网站，包括学习路线、知识体系（用专栏形式更新）。",
-  "author": "Choi Yang<https://github.com/Chocolate1999>",
+  "description": "一站式内容网站，包括学习路线、知识体系。",
+  "author": "xiyuan <https://github.com/xiyuan230>",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -15,14 +15,8 @@
     "url": "https://github.com/chodocs/chodocs/issues"
   },
   "keywords": [
-    "react 专栏",
-    "vue 专栏",
-    "TypeScript 系列",
-    "Next.js 实战",
-    "前端基础",
-    "前端学习路线",
-    "前端思维导图",
-    "知识星球"
+    "学习资源",
+    "笔记"
   ],
   "scripts": {
     "dev": "vitepress dev docs --port 8080 --max-old-space-size=50000",
