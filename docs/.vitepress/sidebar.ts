@@ -1,6 +1,7 @@
 export default {
   '/': sidebarDefault(),
   '/interview/': sidebarInterview(),
+  '/gwy/': sidebarGwy(),
 }
 // 右侧导航栏
 
@@ -38,6 +39,33 @@ function sidebarInterview() {
       collapsed: false,
       items: [
         { text: '添加 sitemap', link: '/nextjs/sitemap/' },
+      ],
+    },
+  ]
+}
+
+function sidebarGwy() {
+  return [
+    {
+      text: '行测',
+      collapsed: false,
+      items: [
+        { text: '面试题', link: '/interview/Java面试笔记' },
+        { text: '面试经验', link: '/zsxq' },
+      ],
+    },
+    {
+      text: '申论',
+      collapsed: false,
+      items: [
+        { text: '添加 sitemap', link: '/nextjs/sitemap/' },
+      ],
+    },
+    {
+      text: '公安专业',
+      collapsed: false,
+      items: [
+        { text: '公专重点', link: '/gwy/gn/公安重点内容' },
       ],
     },
   ]
