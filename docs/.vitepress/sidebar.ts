@@ -1,6 +1,6 @@
 export default {
   '/': sidebarDefault(),
-  '/interview': sidebarInterview(),
+  '/interview/': sidebarInterview(),
 }
 // 右侧导航栏
 
