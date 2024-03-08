@@ -30,7 +30,7 @@ jobs:
           cache: pnpm
       - run: pnpm install
       - name: Build
-        run: pnpm run docs:build
+        run: pnpm build
       - uses: actions/configure-pages@v2
       - uses: actions/upload-pages-artifact@v1
         with:

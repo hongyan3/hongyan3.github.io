@@ -18,12 +18,6 @@ ChoDocs 的内容是免费开源的，但也希望各位遵循开源精神，不
 
 [https://github.com/chodocs/chodocs](https://github.com/chodocs/chodocs) 
 
-::: info 附：
-
-- [关于 ChoDocs](/chodocs)
-
-- [学习圈子](/zsxq)
-:::
 
 ## 📓 内容
 
