@@ -180,7 +180,7 @@ Redis的过期删除策略：**惰性删除** + **定期删除**两种策略配�
 
 1. 采用`EXPLAIN`或者`DESC`命令获取MySQL如何执行SELECT语句
 
-   ![image-20231230134440074](https://s2.loli.net/2024/03/08/cYrsXDemf5R2hOq.png)![image-20231230135158620](/Users/xiyuan/Documents/Typora/技术文档/Java面试笔记.assets/image-20231230135158620.png)
+   ![image-20231230134440074](https://s2.loli.net/2024/03/08/cYrsXDemf5R2hOq.png)![image-20231230135158620]
 
 > 如果SQL的type是`index`或者`all`时，就需要优化
 
@@ -238,7 +238,7 @@ MySQL超大分页处理
 
 索引创建原则
 
-![image-20231231124825749](/Users/xiyuan/Documents/Typora/技术文档/Java面试笔记.assets/image-20231231124825749.png)
+![image-20231231124825749](https://s2.loli.net/2024/03/08/dfgbqQK8WjIG235.png)
 
 什么情况下索引会失效？
 
@@ -252,7 +252,7 @@ MySQL超大分页处理
 
 SQL优化经验
 
-![image-20231231132223273](/Users/xiyuan/Documents/Typora/技术文档/Java面试笔记.assets/image-20231231132223273.png)
+![image-20231231132223273](https://s2.loli.net/2024/03/08/dLNVpezsJFZy39b.png)
 
 ![image-20231231132833872](https://s2.loli.net/2024/03/08/FsubCfwTey576QD.png)
 
@@ -272,9 +272,9 @@ SQL优化经验
 
 undo log和redo log的区别
 
-![image-20240106220024943](/Users/xiyuan/Documents/Typora/技术文档/Java面试笔记.assets/image-20240106220024943.png)
+![image-20240106220024943](https://s2.loli.net/2024/03/08/asDX93xH685w2pl.png)
 
-![image-20240106220654887](https://s2.loli.net/2024/03/08/VZuxUjKIrhS82L3.png)
+![image-20240106220654887](https://s2.loli.net/2024/03/08/C76pNsxoEZmukfz.png)
 
 ![image-20240106220633733](https://s2.loli.net/2024/03/08/s6aybRHJwPeiBo2.png)
 
@@ -287,7 +287,7 @@ undo log和redo log的区别
 
 解释一下MVCC
 
-![image-20240106221458999](/Users/xiyuan/Documents/Typora/技术文档/Java面试笔记.assets/image-20240106221458999.png)
+![image-20240106221458999](https://s2.loli.net/2024/03/08/vxAqrnGwEZgjd6b.png)
 
 ![image-20240106221541964](https://s2.loli.net/2024/03/08/P7FeNd3YWbwlirt.png)
 
