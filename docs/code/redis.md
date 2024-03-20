@@ -181,3 +181,24 @@ Redis的过期删除策略：**惰性删除** + **定期删除**两种策略配�
      - 每个master都可以有多个slave节点
      - master之间通过ping监测彼此健康状态
      - 客户端可以访问集群任意节点，最终都会被转发到正确的节点
+
+### 10. Redis为什么快
+
+- 基于内存
+
+- 单线程，没有上下文切换
+
+- I/O多路复用
+
+  - **阻塞IO**
+
+    ![image-20240320154737061](https://s2.loli.net/2024/03/20/ntskhKZdq4VQebI.png)
+
+  - **非阻塞IO**
+
+    ![image-20240320154826212](https://s2.loli.net/2024/03/20/CVAisNuotFhXPrv.png)
+
+  - **IO多路复用**
+
+    ![image-20240320155136805](https://s2.loli.net/2024/03/20/exL1qNJAk6zYwp8.png)
+
