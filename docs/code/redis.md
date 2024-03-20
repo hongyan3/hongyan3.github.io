@@ -121,9 +121,9 @@ Redis的过期删除策略：**惰性删除** + **定期删除**两种策略配�
 
 指当Redis中的内存不够用时，此时向Redis中添加新的key，Redis就会按照某种策略将内存中的数据删除，这种策略就叫做数据淘汰策略
 
-- **LRU（Last Recently Used）**最近最少使用。用当前的时间减去最后一次的访问时间，这个值越大则淘汰优先级越高
+- **LRU（Last Recently Used**最近最少使用。用当前的时间减去最后一次的访问时间，这个值越大则淘汰优先级越高
 
-- **LFU（Last Frequently Used）**最少频率使用。统计每一个key的访问频率，值越小，淘汰优先级越高
+- **LFU（Last Frequently Used**最少频率使用。统计每一个key的访问频率，值越小，淘汰优先级越高
 
 ### 8. Redis分布式锁
 
@@ -158,3 +158,26 @@ Redis的过期删除策略：**惰性删除** + **定期删除**两种策略配�
    - 主从增量同步
 
      ![image-20231123211229609](https://s2.loli.net/2024/03/08/VYTP5ktdbcvBxZR.png)
+
+2. 哨兵模式
+
+   - 哨兵模式的作用
+    ![image-20240320152052007](https://s2.loli.net/2024/03/20/MyHDx9YJGn7qeul.png)
+
+   - 服务状态监控
+
+     ![image-20240320152220254](https://s2.loli.net/2024/03/20/WYFQgNcyV6a5rLO.png)
+     
+   - 集群**脑裂**
+
+     ![image-20240320152431151](https://s2.loli.net/2024/03/20/vFq7Rag6cGOT5mi.png)
+
+3. 分片集群
+
+   ![image-20240320151601733](https://s2.loli.net/2024/03/20/6id45KqCnyETprv.png)
+
+   - 分片集群的作用
+     - 集群中有多个master，每个master保存不同的数据
+     - 每个master都可以有多个slave节点
+     - master之间通过ping监测彼此健康状态
+     - 客户端可以访问集群任意节点，最终都会被转发到正确的节点
