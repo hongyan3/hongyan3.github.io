@@ -2,6 +2,7 @@ export default {
   '/': sidebarDefault(),
   '/interview/': sidebarInterview(),
   '/gwy/': sidebarGwy(),
+  '/code/': sidebarCode(),
 }
 // 右侧导航栏
 
@@ -19,6 +20,19 @@ function sidebarDefault() {
       collapsed: false,
       items: [
         { text: 'Java面试题', link: '/interview/Java面试笔记' },
+      ],
+    },
+  ]
+}
+
+function sidebarCode() {
+  return [
+    {
+      text: '数据库',
+      collapsed: false,
+      items: [
+        { text: 'MySQL', link: '/code/mysql' },
+        { text: 'Redis', link: '/code/redis' },
       ],
     },
   ]
