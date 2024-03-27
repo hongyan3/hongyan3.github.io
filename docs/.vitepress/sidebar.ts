@@ -35,6 +35,14 @@ function sidebarCode() {
         { text: 'Redis', link: '/code/redis' },
       ],
     },
+    {
+      text: '消息队列',
+      collapsed: false,
+      items: [
+        { text: 'RabbitMQ', link: '/code/rabbitmq' },
+        { text: 'Kafka', link: '/code/kafka' },
+      ],
+    },
   ]
 }
 
