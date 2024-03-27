@@ -43,6 +43,13 @@ function sidebarCode() {
         { text: 'Kafka', link: '/code/kafka' },
       ],
     },
+    {
+      text: 'Linux基础',
+      collapsed: false,
+      items: [
+        { text: 'Liux', link: '/code/linux' },
+      ],
+    },
   ]
 }
 
